@@ -1,0 +1,74 @@
+AULA 68 - INTRODUCAO AO FIREBASE
+
+https://firebase.google.com/
+
+AULA 69 - Endendendo banco de dados
+
+- clicar em project overview
+- clicar no botao web
+- clique em "continuar no console"
+- no menu principal, clique em "cloud fire storage" ou "firestore database"
+- clique em "criar banco de dados" -> "iniciar em modo de teste" e clique em avançar.
+- No combobox "local do cloud firestore", escolha "south america east 1".
+- Na aba regras, altere a data do banco para poder alterar até 1 ano pra frente.
+
+	CRIANDO UMA COLECAO NO BANCO
+
+- clique na aba dados -> Clique em iniciar coleção. 
+	-> dê um nome pra colecao ("posts"), preenche os atributos nome e autor. clique em salvar.
+
+- crie uma colecao de users, com 1 usuario.
+
+AULA 70 - Configurando Firebase
+
+- suba sua aplicacao e veja se está tudo certo: -> "npm start" na pasta do projeto, sem aspas.
+- instale o firebase na pasta do projeto: -> npm install firebase
+
+- vá no firebase, e copie as configuracoes: 
+	-> clique na casinha "visao geral do projeto"
+	-> clique no nome do seu projeto
+	-> clique na engrenagem do projeto. No campo "configuracao jdk", copie as configuracoes. Exemplo abaixo:
+	
+	var firebaseConfig = {
+    apiKey: "AIzaSyBalIyVvGELBhLvjJXExyAlHYgNFzyCIO4",
+    authDomain: "curso-react-udemy-50b4e.firebaseapp.com",
+    projectId: "curso-react-udemy-50b4e",
+    storageBucket: "curso-react-udemy-50b4e.appspot.com",
+    messagingSenderId: "227562754847",
+    appId: "1:227562754847:web:c4b5fd36c466401c46962a",
+    measurementId: "G-V2F916N3H6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+- na pasta src do projeto, crie um arquivo "firebaseConnection.js", com o conteudo copiado acima.
+
+AULA 71 - Usando uma base de dados
+
+AULA 72 - Trabalhando com listas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

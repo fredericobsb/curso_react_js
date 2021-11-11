@@ -1,0 +1,7 @@
+AULA 28 - INSTALANDO E PRIMEIROS PASSOS
+
+- instalar react: 
+	npm install -g create-react-app
+	
+- criar projeto react:
+    create-react-app nomeDoProjeto

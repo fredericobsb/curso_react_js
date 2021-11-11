@@ -1,0 +1,38 @@
+AULA 37- CICLO DE VIDA DOS COMPONENTES
+
+componentDidMount() => roda 1x depois que a tela é montada.
+
+componentDidUpdate() => Toda vez que atualizar algo , ele é chamado.
+
+componentWillMount() É executado quando o componente estiver prestes a ser montado no DOM da página. 
+Assim, após esse método ser executado o componente irá criar o nó no navegador. 
+Todas as coisas que você deseja fazer antes do componente ser montado, devem ser definidas aqui.
+
+componentWillUpdate() É executado somente quando shouldComponentUpdate devolver true.
+
+
+componentWillUnmount() => Nesta fase, o componente não é mais necessário e será desmontado do DOM. 
+
+
+examplo de construtor com props:
+
+constructor(props){
+	super(props);
+	this.state = {
+		hora: '00:00:00'
+	};
+}
+
+componentDidMount( ){
+	setInterval( () =>{
+		this.setState({hora: new Date().toLocaleTimeString()})
+	},1000);
+}
+
+componentDidUpdate(){
+	console.log('atualizou');
+}
+
+shouldComoponentUpdate(){
+	
+}

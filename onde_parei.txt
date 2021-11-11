@@ -1,0 +1,3 @@
+proximo = aula 78 - EXCLUINDO ITEM
+
+REVISAO = 75 excluindo item

@@ -1,0 +1,9 @@
+AULA 67 - FAZENDO DEPLOY
+
+instalar o netlify:
+
+npm install -g netlify-cli
+
+fazer deploy:
+
+netlify deploy

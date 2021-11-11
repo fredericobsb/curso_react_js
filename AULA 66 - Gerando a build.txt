@@ -1,0 +1,22 @@
+AULA 66 e 67 - Gerando a build e fazendo deploy
+
+* CRIAR UM ARQUIVO CHAMADO "_redirects" na pasta public do projeto, com o conteudo abaixo:
+
+/* /index.html 200
+
+* gere a build com o comando:
+	npm run build
+
+SUBINDO A BUILD:
+
+- CRIE UMA CONTA NO NETLIFY: 
+	https://app.netlify.com
+
+- Na pasta do projeto, instale o netfly:
+	npm install -g netlify-cli
+	
+	netlify deploy
+
+ ==> suba a pasta BUILD do projeto.
+ 
+	netlify deploy --prod

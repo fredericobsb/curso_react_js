@@ -1,0 +1,35 @@
+AULA 39- EVENTOS
+
+ * CRIOU o folder 'components' dentro de src. 
+ * Criou o folder membros dentro de component.
+ * criou o arquivo Membro.js com o conteudo abaixo:
+ ----------------------------------
+ class Membro extends Component{
+	render(){
+		return(
+			<div>Membro</div>
+		
+		);
+
+	}
+ }
+ 
+ export default Membro;
+ -----------------------------------
+ 
+ * Na classe AppComponent, importou o arquivo Membro para usar:
+ 
+ --------------------------------------------------
+ import Membro from './components/Membro/Membro';
+ 
+ class App extends Component{
+	render(){
+		return(
+			<div>
+				<Membro/>
+			</div>
+		);
+	}
+ }
+ export default App;
+ -----------------------------------------------
